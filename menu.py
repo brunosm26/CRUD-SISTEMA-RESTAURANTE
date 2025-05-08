@@ -29,14 +29,6 @@ def menu():
 menu()
 op=int(input("ESCOLHA UMA OPÇÃO:\n>>>"))
  
-while True:
-    if op == 2:
-        print(cor.AZUL + "1. ADICIONAR PRATO")
-        print(cor.AZUL + "3. ATUALIZAR VALOR")
-        print(cor.AZUL + "4. EXCLUIR PRATO")
-        print(cor.AZUL + "6. VOLTAR AO MENU ANTERIOR")
-
-        opCAR = int(input("Selecione a opção desejada: "))
             
 
 
