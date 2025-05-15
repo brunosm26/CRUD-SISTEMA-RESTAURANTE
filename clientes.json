@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "SERGIO",
+        "idade": "23",
+        "cpf": "123456",
+        "mesa": "1"
+    },
+    {
+        "nome": "leal",
+        "idade": "18",
+        "cpf": "987",
+        "mesa": "2"
+    },
+    {
+        "nome": "gabi",
+        "idade": "21",
+        "cpf": "777",
+        "mesa": "3"
+    },
+    {
+        "nome": "novo",
+        "idade": "45",
+        "cpf": "8",
+        "mesa": "4"
+    }
+]
