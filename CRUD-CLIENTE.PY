@@ -1,6 +1,7 @@
 import json
 import os
 from time import sleep
+from menu import menu
 
 arquivo = os.path.join(os.path.dirname(__file__), 'clientes.json')
 
@@ -14,20 +15,7 @@ class cor:
     RESET = '\033[0m'
 
 
-def menu():
-    print(cor.AMARELO + "╔════════════════════════════════════════════════════════════════════════════════╗")
-    print(cor.AMARELO + "║      ______ _______ _______ _______      _______  _____   _____  ______        ║")
-    print(cor.AMARELO + "║     |  ____ |______ |______    |         |______ |     | |     | |     \       ║")
-    print(cor.AMARELO + "║     |_____| |______ ______|    |         |       |_____| |_____| |_____/       ║")
-    print(cor.AMARELO + "║                                                                                ║")
-    print(cor.AMARELO + "║                          BEM-VINDO AO GEST FOOD!                               ║")
-    print(cor.AMARELO + "╚════════════════════════════════════════════════════════════════════════════════╝")
-
-
-    print("  1 - MÓDULO DE CLIENTES")
-    print("  2 - CARDÁPIO")
-    print("  3 - FAZER UM PEDIDO")
-    print("  4 - DESLIGAR SISTEMA")
+menu()
 
 def exibir_menu():
     print(cor.AMARELO + "\nMENU:")
@@ -54,7 +42,7 @@ def adicionar_cliente(nome, idade, cpf, mesa):
 
     with open(arquivo, 'w', encoding='utf-8') as f:
         json.dump(clientes,f,indent=4,ensure_ascii=False)
-    print(cor.VERDE+"CLIENTE ADICONADO COM SUCESSO!")
+    print(cor.VERDE+"CLIENTE ADICIONADO COM SUCESSO!")
 
 
 
