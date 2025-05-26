@@ -1,0 +1,11 @@
+[
+    {
+        "num_pedido": 1,
+        "nome_cliente": 121212949,
+        "pratos": [
+            "Feijoada"
+        ],
+        "total": 30.0,
+        "status": "Em Preparo"
+    }
+]
