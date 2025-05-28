@@ -1,11 +1,56 @@
 [
     {
         "num_pedido": 1,
-        "nome_cliente": 121212949,
+        "cpf_cliente": 130,
         "pratos": [
-            "Feijoada"
+            "potato"
         ],
-        "total": 30.0,
+        "total": 56.0,
+        "status": "Pronto"
+    },
+    {
+        "num_pedido": 2,
+        "cpf_cliente": 130,
+        "pratos": [
+            "ARROZ"
+        ],
+        "total": 12.99,
+        "status": "Pronto"
+    },
+    {
+        "num_pedido": 3,
+        "cpf_cliente": 130,
+        "pratos": [
+            "potato"
+        ],
+        "total": 56.0,
+        "status": "Em Preparo"
+    },
+    {
+        "num_pedido": 4,
+        "cpf_cliente": 832,
+        "pratos": [
+            "coca"
+        ],
+        "total": 6.5,
+        "status": "Em Preparo"
+    },
+    {
+        "num_pedido": 5,
+        "cpf_cliente": 832,
+        "pratos": [
+            "potato"
+        ],
+        "total": 56.0,
+        "status": "Entregue"
+    },
+    {
+        "num_pedido": 6,
+        "cpf_cliente": 4,
+        "pratos": [
+            "ARROZ"
+        ],
+        "total": 12.99,
         "status": "Em Preparo"
     }
 ]
