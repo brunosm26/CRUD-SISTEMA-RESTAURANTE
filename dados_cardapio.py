@@ -1,7 +1,13 @@
 import json
+import os
 
-PRATOS_FILE = 'pratos.json'
-BEBIDAS_FILE = 'bebidas.json'
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+PRATOS_FILE = os.path.join(BASE_DIR, 'pratos.json')
+BEBIDAS_FILE = os.path.join(BASE_DIR, 'bebidas.json')
+
 
 try:
     with open(PRATOS_FILE, 'r', encoding='utf-8') as f:
