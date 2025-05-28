@@ -13,8 +13,11 @@ def pedido_module():
         for item in cardapio_bebidas:
             cardapio[item["nome_bebida"]] = item["valor"]
 
-        if os.path.exists("criacao_pedidos.json"):
-            with open("criacao_pedidos.json", "r") as arquivo:
+        BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+        PEDIDOS_FILE = os.path.join(BASE_DIR, "criacao_pedidos.json")
+
+        if os.path.exists(PEDIDOS_FILE):
+            with open(PEDIDOS_FILE, "r", encoding="utf-8") as arquivo:
                 try:
                     pedidos = json.load(arquivo)
                 except json.JSONDecodeError:
@@ -23,12 +26,13 @@ def pedido_module():
             pedidos = []
 
 
+
         numero_pedido = len(pedidos) + 1
 
         def criar_pedido(numero_pedido): 
             print("\n==== Criando novo pedido ====\n")
 
-            cpfcliente = int(input("Digite o CPF do cliente: "))
+            cpfcliente = (input("Digite o CPF do cliente: "))
 
             print("\nCardápio:\n")
             for prato, preco in cardapio.items():
